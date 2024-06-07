@@ -5,19 +5,15 @@ pipeline:
     - stage: "Clonar Repositorio"
       steps:
         - sh: "echo 'Clonando el repositorio...'"
-        # Aquí deberías clonar tu repositorio, pero solo usamos echo para esta demo
     - stage: "Construir"
       steps:
         - sh: "echo 'Construyendo el proyecto...'"
-        # Aquí deberías construir tu proyecto, pero solo usamos echo para esta demo
     - stage: "Pruebas"
       steps:
         - sh: "echo 'Ejecutando pruebas...'"
-        # Aquí deberías ejecutar tus pruebas, pero solo usamos echo para esta demo
     - stage: "Desplegar"
       steps:
         - sh: "echo 'Desplegando el proyecto...'"
-        # Aquí deberías desplegar tu proyecto, pero solo usamos echo para esta demo
   post:
     success:
       - sh: "echo '¡Pipeline ejecutado exitosamente!'"
